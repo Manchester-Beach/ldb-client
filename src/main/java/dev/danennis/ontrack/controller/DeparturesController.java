@@ -4,9 +4,11 @@ import dev.danennis.ontrack.model.DepartureBoard;
 import dev.danennis.ontrack.service.DeparturesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+@CrossOrigin(origins = { "http://localhost:3000", "http://beach-train-app.herokuapp.com" })
 @RestController
 public class DeparturesController {
 
