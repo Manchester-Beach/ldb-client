@@ -184,6 +184,13 @@ public class GetDeparturesRequestParams {
         @XmlElement(required = true)
         protected List<String> crs;
 
+        public void addDest(String dest) {
+            if (crs == null) {
+                crs = new ArrayList<String>();
+            }
+            crs.add(dest);
+        }
+
         /**
          * Gets the value of the crs property.
          * 

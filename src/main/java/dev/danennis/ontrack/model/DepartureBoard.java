@@ -10,16 +10,16 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DepartureBoard {
-    private List<Departure> departureList;
+    private List<Departure> departures;
     private String stationName;
 
-    public DepartureBoard(String stationName, List<Departure> departureList) {
-        this.departureList = departureList;
+    public DepartureBoard(String stationName, List<Departure> departures) {
+        this.departures = departures;
         this.stationName = stationName;
     }
 
-    public List<Departure> getDepartureList() {
-        return departureList;
+    public List<Departure> getDepartures() {
+        return departures;
     }
 
     public String getStationName() {
