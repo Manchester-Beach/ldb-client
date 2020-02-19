@@ -48,7 +48,7 @@ public class JourneysService {
                 origin.setEstimated(departure.getStd());
             }
             else if (etd.equals("Cancelled")) {
-                origin.setEstimated("");
+                origin.setEstimated("-");
             }
             else {
                 origin.setEstimated(departure.getEtd());
